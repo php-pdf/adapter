@@ -22,6 +22,14 @@ interface Pdf {
      */
     public function inline($filename = null);
 
+
+    /**
+     * Get the PDF as a string
+     *
+     * @return string
+     */
+    public function output();
+
     /**
      * Save the PDF to a file path.
      *
