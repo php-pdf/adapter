@@ -19,7 +19,7 @@ interface Pdf {
      *
      * @return ResponseInterface
      */
-    public function output();
+    public function inline();
 
     /**
      * Save the PDF to a file path.
