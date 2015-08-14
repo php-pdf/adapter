@@ -9,7 +9,7 @@
 This package aims to provide a common interface for PDF generation, based on plain HTML. 
 
 Todo:
- - [ ] Create interface
- - [ ] Create factory/wrapper for dompdf
+ - [x] Create interface
+ - [x] Create factory/wrapper for dompdf (https://github.com/php-pdf/dompdf-adapter)
  - [ ] Create factory/wrapper for wkhtmltopdf
  - [ ] Create factory/wrapper for ...
