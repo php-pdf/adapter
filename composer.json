@@ -1,0 +1,26 @@
+{
+    "name": "php-pdf/adapter",
+    "description": "PDF Adapter contract",
+    "license": "MIT",
+    "keywords": ["pdf", "adapter"],
+    "homepage": "https://github.com/php-pdf/adapter",
+    "authors": [
+        {
+            "name": "Barry vd. Heuvel",
+            "email": "barryvdh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pdf\\Adapter\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
