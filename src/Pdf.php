@@ -7,19 +7,20 @@ use Psr\Http\Message\ResponseInterface;
 interface Pdf {
 
     /**
-     * Force the PDF to download.
+     * Create an attachment response, to force the download of the PDF
      *
-     * @param  string|null  $name
+     * @param  string|null  $filename
      * @return ResponseInterface
      */
-    public function download($name = null);
+    public function attachment($filename = null);
 
     /**
      * Show the PDF in the browser.
      *
+     * @param  string|null  $filename
      * @return ResponseInterface
      */
-    public function inline();
+    public function inline($filename = null);
 
     /**
      * Save the PDF to a file path.
@@ -28,5 +29,5 @@ interface Pdf {
      * @return bool  true if successful
      */
     public function save($path);
-    
+
 }

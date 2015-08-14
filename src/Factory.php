@@ -8,20 +8,18 @@ interface Factory {
      * Create the PDF from a HTML string
      *
      * @param  string $html
-     * @param  string $orientation Can be portrait or landscape
-     * @param  string $paper  Paper type
+     * @param  array  $options
      * @return Pdf    The Pdf instance
      */
-    public function html($html, $orientation = 'portrait', $paper = 'a4');
+    public function html($html, array $options = []);
 
     /**
      * Create the PDF from an existing HTML file
      *
-     * @param  string $html
-     * @param  string $orientation Can be portrait or landscape
-     * @param  string $paper  Paper type
+     * @param  string $path
+     * @param  array  $options
      * @return Pdf    The Pdf instance
      */
-    public function file($html, $orientation = 'portrait', $paper = 'a4');
+    public function file($path, array $options = []);
     
 }
