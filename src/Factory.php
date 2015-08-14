@@ -5,6 +5,14 @@ namespace Pdf\Adapter;
 interface Factory {
 
     /**
+     * Set the default options
+     *
+     * @param  array $options
+     * @return void
+     */
+    public function setDefaultOptions(array $options);
+
+    /**
      * Create the PDF from a HTML string
      *
      * @param  string $html
